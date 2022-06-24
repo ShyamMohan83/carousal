@@ -5,7 +5,6 @@ import {
   animate,
   transition
 } from '@angular/animations';
-import { Time } from '@angular/common';
 @Component({
   selector: 'app-carousal',
   templateUrl: './carousal.component.html',
@@ -70,7 +69,6 @@ export class CarousalComponent implements OnInit {
 
   expandAll() {
     this.isExpanded = !this.isExpanded;
-    console.log(this.isExpanded);
   }
 
   // delay function 
