@@ -55,6 +55,12 @@ ul li.list-item{
     }
 }
 
+@media only screen and (max-width: 740px) {
+    ul li.carousal-item{ 
+        width: 45%;
+    }
+}
+
 @media only screen and (max-width: 667px) {
     ul li.list-item {
         width: 87%;
