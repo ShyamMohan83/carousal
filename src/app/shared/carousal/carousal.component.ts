@@ -30,7 +30,6 @@ export class CarousalComponent implements OnInit {
   @Input() carousalAttributes:any;
 
   delayAnimation = 10; // 10 milliseconds
-  itemTobeMoved = 2; // No item to be animated 2 = 3 items index 0 to 2
 
 
   isExpanded = false;
