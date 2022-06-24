@@ -1,0 +1,15 @@
+<div>
+  <ul [ngClass]="isExpanded ? 'cardlist' :  'carousal'">
+    <li *ngFor="let data of carousalData" [ngClass]="isExpanded ? 'list-item' :  'carousal-item'" [@flyout] >
+      <div >
+        <app-carousal-card [cardItem] = data [carousalAttributes]="carousalAttributes"  ></app-carousal-card>
+      </div>
+      
+    </li>
+    <!--Overlay over the Carousal and next button-->
+    <li class="carousal-mask" *ngIf="!isExpanded">
+      <button (click)="moveCarousalLeft()"> > </button>
+    </li>
+</ul>
+<button  (click)="expandAll()">{{isExpanded ? 'Collapse'  : 'Expand'}}</button>
+</div>

@@ -1,0 +1,49 @@
+.carousal{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    height: 112px;
+    width:2000px;
+}
+
+.cardlist{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul li.carousal-item{
+   float: left;
+   width: 22%;
+   height: 80px;
+   border: 1px solid #c9c9c9;
+   margin: 5px;
+   padding:10px;
+   box-shadow: 5px 5px 5px #c9c9c9;
+   animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+ul li.list-item{
+    float: left;
+    width: 22%;
+    height: 80px;
+    border: 1px solid #c9c9c9;
+    margin: 5px;
+    padding:10px;
+    box-shadow: 5px 5px 5px #c9c9c9;
+ }
+
+.carousal-mask {
+    height: 112px;
+    position: absolute;
+    clear: both;
+    right: 0;
+    background-color: #FFF;
+    width: 10%;
+}
+.carousal-mask {
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<div>
+    <div *ngFor="let key of cardKey"  > 
+        <span *ngIf="carousalAttributes[key] !== '' " >
+            {{carousalAttributes[key] }} :
+            </span>
+
+        <span>
+            {{cardItem[key]}}
+        </span>    
+    </div>
+</div>
