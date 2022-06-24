@@ -48,3 +48,19 @@ ul li.list-item{
 .carousal-mask {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 844px) {
+    ul li.carousal-item{ 
+        width: 29%;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    ul li.list-item {
+        width: 87%;
+    }
+    ul li.carousal-item{ 
+        width: 87%;
+    }
+}
+

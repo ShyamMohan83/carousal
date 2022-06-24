@@ -31,6 +31,8 @@ export class CarousalComponent implements OnInit {
 
   delayAnimation = 10; // 10 milliseconds
   itemTobeMoved = 2; // No item to be animated 2 = 3 items index 0 to 2
+
+
   isExpanded = false;
   public animateItems = true;
   ngOnInit(): void {
@@ -41,9 +43,20 @@ export class CarousalComponent implements OnInit {
       this.moveItems()
     }
   }
-  async moveItems () {
+
+  findItemTobeMoved(deiviceWidth:Number): Number {
+    let items = 2
+    if(deiviceWidth <= 844) {
+      items = 2;
+   } if(deiviceWidth <= 667) {
+    items= 1;
+   }
+   return items;
+  }
+  moveItems () {
+    const numberOfItemTobemoved = this.findItemTobeMoved(document.documentElement.clientWidth);
     this.animateItems = false;
-    const firstThreeItem  = this.carousalData.splice(0,this.itemTobeMoved);
+    const firstThreeItem  = this.carousalData.splice(0,numberOfItemTobemoved);
     const temp = [...this.carousalData]
     this.carousalData = [];
     /**
