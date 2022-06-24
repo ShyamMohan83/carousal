@@ -14,10 +14,10 @@ import { Time } from '@angular/common';
     trigger('flyout', [
       transition('void => *', [
         style({transform: 'translateX(100%)'}),
-        animate('1s')
+        animate('0.5s')
       ]),
       transition('* => void', [
-        animate('1s', style({transform: 'translateX(-100%)'}))
+        animate('0.5s', style({transform: 'translateX(-100%)'}))
       ]),
     ]),
   ]
