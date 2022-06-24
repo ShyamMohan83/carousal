@@ -4,7 +4,7 @@
     list-style: none;
     overflow: hidden;
     height: 112px;
-    width:2000px;
+    width:100%;
 }
 
 .cardlist{
@@ -12,11 +12,12 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
+    width:auto;
 }
 
 ul li.carousal-item{
    float: left;
-   width: 17%;
+   width: 21%;
    height: 80px;
    border: 1px solid #c9c9c9;
    margin: 5px;
